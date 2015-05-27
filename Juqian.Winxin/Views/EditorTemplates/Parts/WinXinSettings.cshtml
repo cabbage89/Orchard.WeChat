@@ -29,9 +29,9 @@
         <span class="hint">@T("此处填写微信Secret.")</span>
     </div>
     <div>
-        <label for="">@T("微信账号名称")</label>
+        <label for="">@T("原始ID")</label>
         @Html.TextBoxFor(m => m.UserName, new { @class = "text medium", required = "required" })
         @Html.ValidationMessage("UserName", "*")
-        <span class="hint">@T("微信账号名称.")</span>
+        <span class="hint">@T("公众平台原始ID,用于判断消息请求是否来源于配置的公众号.")</span>
     </div>
 </fieldset>
