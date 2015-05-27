@@ -1,0 +1,12 @@
+﻿@{
+var svc= WorkContext.Resolve<Juqian.Winxin.Services.IWinXinService>();
+  }
+  @foreach (var item in Model.Items)
+  {
+<xml>
+  <ToUserName><![CDATA[@Model.Attributes["ToUserName"]]]></ToUserName>
+  <FromUserName><![CDATA[@Model.Attributes["FromUserName"]]]></FromUserName>
+  <CreateTime>@(svc.ConvertWXDateTimeInt(DateTime.Now))</CreateTime>
+  @Display(item)
+</xml>
+  }

@@ -1,0 +1,9 @@
+﻿Name: Juqian.Winxin
+AntiForgery: disabled
+Author: 深圳聚乾科技开发有限公司
+Website: http://www.juqian168.com/
+Version: 1.0
+OrchardVersion: 1.8.1
+Category: Juqian
+Dependencies: Orchard.Workflows,Orchard.Forms,Orchard.Fields,Orchard.MediaLibrary
+Description: 微信营销相关工作流

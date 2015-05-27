@@ -1,0 +1,4 @@
+﻿<ArticleCount>@(Model.WXNewsMsg.WXMsgNewsContainerField.ContentItems.Count())</ArticleCount>
+@foreach(var item in Model.WXNewsMsg.WXMsgNewsContainerField.ContentItems){
+@Display(item)
+}

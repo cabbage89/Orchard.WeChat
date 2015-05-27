@@ -1,0 +1,11 @@
+﻿@{
+   var picUrl= WorkContext.CurrentSite.BaseUrl+Model.ContentItem.WXNewsItemMsg.WXMsgNewsItemPicField.MediaParts[0].MediaUrl;
+}
+<Articles>
+  <item>
+    <Title><![CDATA[@(Model.ContentItem.WXNewsItemMsg.WXMsgNewsItemTitleField.Value)]]></Title>
+    <Description><![CDATA[@(Model.ContentItem.WXNewsItemMsg.WXMsgNewsItemDescField.Value)]]></Description>
+    <PicUrl><![CDATA[@picUrl]]></PicUrl>
+    <Url><![CDATA[@(Model.ContentItem.WXNewsItemMsg.WXMsgNewsItemUrlField.Value)]]></Url>
+  </item>
+</Articles>

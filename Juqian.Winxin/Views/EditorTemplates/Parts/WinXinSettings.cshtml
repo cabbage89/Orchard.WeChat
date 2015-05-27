@@ -1,0 +1,37 @@
+﻿@model Juqian.Winxin.Models.WinXinSettingsPart
+@{
+    var currentSite = WorkContext.CurrentSite;
+
+}
+<fieldset>
+    <legend>@T("微信设置")</legend>
+    <div>
+        <label for="">@T("微信回调Url")</label>
+        @Html.TextBox("", (currentSite.BaseUrl) + "/wxSvc", new { disabled = "disabled", @class = "text medium" })
+        <span class="hint">@T("拷贝到微信公众账号.")</span>
+    </div>
+    <div>
+        <label for="@Html.FieldIdFor(m => m.ValidToken)">@T("Token")</label>
+        @Html.TextBoxFor(m => m.ValidToken, new { @class = "text medium", required = "required" })
+        @Html.ValidationMessage("ValidToken", "*")
+        <span class="hint">@T("微信首次绑定时的密钥.")</span>
+    </div>
+    <div>
+        <label for="@Html.FieldIdFor(m => m.AppId)">@T("AppId")</label>
+        @Html.TextBoxFor(m => m.AppId, new { @class = "text medium", required = "required" })
+        @Html.ValidationMessage("AppId", "*")
+        <span class="hint">@T("此处填写微信AppId.")</span>
+    </div>
+    <div>
+        <label for="@Html.FieldIdFor(m => m.Secret)">@T("Secret")</label>
+        @Html.TextBoxFor(m => m.Secret, new { @class = "text medium", required = "required" })
+        @Html.ValidationMessage("Secret", "*")
+        <span class="hint">@T("此处填写微信Secret.")</span>
+    </div>
+    <div>
+        <label for="">@T("微信账号名称")</label>
+        @Html.TextBoxFor(m => m.UserName, new { @class = "text medium", required = "required" })
+        @Html.ValidationMessage("UserName", "*")
+        <span class="hint">@T("微信账号名称.")</span>
+    </div>
+</fieldset>

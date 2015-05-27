@@ -1,0 +1,22 @@
+﻿@model Orchard.Core.Navigation.ViewModels.MenuWidgetViewModel
+@using Orchard.ContentManagement
+@using Orchard.Core.Navigation.Models;
+@using (Html.BeginForm("SetMenu", "WeiXinAdmin", new { Area = "Juqian.Winxin" }))
+{
+    <fieldset>
+        @Html.LabelFor(m => m.CurrentMenuId, T("选择微信菜单"))
+        <select id="@Html.FieldIdFor(m => m.CurrentMenuId)" name="@Html.FieldNameFor(m => m.CurrentMenuId)">
+            @foreach (ContentItem menu in Model.Menus)
+            {
+                @Html.SelectOption(Model.CurrentMenuId, menu.Id, Html.ItemDisplayText(menu).ToString())
+            }
+        </select>
+        @Html.ActionLink(T("管理菜单").Text, "Index", "Admin", new { area = "Navigation" }, new { })
+        <span class="hint">@T("选择一个菜单去设置微信.")</span>
+    </fieldset>
+    <fieldset class="save-button">
+        <button class="primaryAction" type="submit" name="submit.setmenu" value="true">立即设置</button>
+        <button class="primaryAction" type="submit" name="submit.getmenu" value="true">从服务器上获取菜单</button>
+        <button class="primaryAction" type="submit" name="submit.deletemenu" value="true">删除服务器上菜单</button>
+    </fieldset>
+}
