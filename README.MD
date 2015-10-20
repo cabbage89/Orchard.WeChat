@@ -5,3 +5,5 @@
 2.在orchard1.8.1版本下测试通过,已用于生产环境.
 
 3.示例 : [http://www.juqian168.com/case/233](http://www.juqian168.com/case/233 "http://www.juqian168.com/case/233")
+
+4.基于本模块的扩展: [http://www.orchardcn.org/site/orchard/128/185](http://www.orchardcn.org/site/orchard/128/185)
