@@ -7,3 +7,5 @@
 3.示例 : [http://www.juqian168.com/case/233](http://www.juqian168.com/case/233 "http://www.juqian168.com/case/233")
 
 4.基于本模块的扩展: [http://www.orchardcn.org/site/orchard/128/185](http://www.orchardcn.org/site/orchard/128/185)
+
+5.[Orchard Gallery](http://gallery.orchardproject.net/List/Modules/Orchard.Module.Juqian.Winxin) 在Orchard模块菜单中可搜索"微信"直接安装使用!
