@@ -1,5 +1,7 @@
 ###Orchard 微信模块###
 
+[Orchard建站视频](http://www.chuanke.com/3027295-124882.html)    
+
 1.本模块由白菜于2014年开发,用于Orchard中的微信回复应用.
 
 2.在orchard1.8.1版本下测试通过,已用于生产环境.
